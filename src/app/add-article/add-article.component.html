@@ -1,0 +1,28 @@
+
+<form id="addForm" >
+   
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input type="text" class="form-control" id="title" name='title' #title />
+    </div>
+    <div class="mb-3">
+      <label for="photo" class="form-label">photo</label>
+      <input type="text" class="form-control" id="author" name="author" #photo/>
+    </div>
+    <div class="mb-3">
+      <label for="Date" class="form-label">Date</label>
+      <input type="text" class="form-control" id="price" name="price" #publicationDate/>
+    </div>
+    <div class="mb-3">
+        <label for="description" class="form-label">description</label>
+        <input type="text" class="form-control" id="price" name="price" #description/>
+      </div>
+    <div class="mb-3">
+        <label for="score" class="form-label">score</label>
+        <input type="number" class="form-control" id="price" name="price" #score/>
+      </div>
+    <button type="button" 
+    id="btnValidAdd"
+    class="btn btn-primary"
+    (click)="addarticle(title.value,photo.value,publicationDate.value,description.value,+score.value)">valider</button> 
+  </form>
